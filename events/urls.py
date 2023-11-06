@@ -6,6 +6,7 @@ from django.shortcuts import render
 
 router = routers.DefaultRouter()
 router.register(r'posts', views.PostViewSet)
+router.register(r'tasks',views.PostViewSet)
 
 urlpatterns = [
     path('', include(router.urls)),
